@@ -17,6 +17,11 @@ Route::get('/', function () {
     return view('template');
 });
 
+Route::view('/panel', 'panel.index')->name('panel');
+
+Route::view('/categorias', 'categorias.index');
+
+
 Route::get('/login', function () {
     return view('auth.login');
 });
